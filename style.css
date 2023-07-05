@@ -50,6 +50,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	position: sticky;
 }
 
 nav img {
@@ -110,8 +111,46 @@ main {
 	overflow: hidden;
 }
 
+@media only screen and (max-width: 1076px) {
+	.hero-title {
+		display: flex;
+		align-content: flex-start;
+		align-items: center;
+	}
+
+	.hero-title p {
+		text-align: center;
+	}
+
+	.image-wrapper {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.title {
+		font-size: 5rem;
+	}
+}
+@media only screen and (max-width: 670px) {
+	.title {
+		font-size: 4.5rem;
+	}
+}
+@media only screen and (max-width: 600px) {
+	header {
+		justify-content: center;
+	}
+	nav {
+		display: none;
+	}
+	.title {
+		font-size: 4rem;
+	}
+}
+
 /* História */
-.history {
+#history {
 	margin-top: 1rem;
 	padding-bottom: 3rem;
 }

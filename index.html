@@ -8,19 +8,27 @@
 		<title>Flappy</title>
 	</head>
 	<body>
-		<header>
+		<header id="home">
 			<img
 				src="./img/Logotipo.png"
 				alt="Logo da equipe, Flappy Game - under the sea" />
 			<nav>
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Integrantes</a></li>
-					<li><a href="#">História</a></li>
+					<li><a href="#" onclick="scrollToDiv('main')">Home</a></li>
+					<li
+						><a href="#" onclick="scrollToDiv('integrants')"
+							>Integrantes</a
+						></li
+					>
+					<li
+						><a href="#" onclick="scrollToDiv('history')"
+							>História</a
+						></li
+					>
 				</ul>
 			</nav>
 		</header>
-		<main>
+		<main id="hero">
 			<div class="container">
 				<div class="hero">
 					<div class="hero-title">
@@ -42,7 +50,7 @@
 				</div>
 			</div>
 		</main>
-		<section class="integrants">
+		<section id="integrants">
 			<div class="container">
 				<h2>Integrantes</h2>
 				<ul>
@@ -54,7 +62,7 @@
 				</ul>
 			</div>
 		</section>
-		<section class="history">
+		<section id="history">
 			<div class="container">
 				<h2>História</h2>
 				<p
@@ -73,5 +81,6 @@
 				>
 			</div>
 		</section>
+		<script src="./main.js"></script>
 	</body>
 </html>
