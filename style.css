@@ -43,6 +43,7 @@ button {
 a {
 	text-decoration: none;
 	color: var(--primary);
+	backgound-color: #fff;
 }
 
 h2 {
